@@ -26,11 +26,11 @@ module.exports = retropieProfiles(async (req, res, login) => {
     const hosts = login({
       // Make sure you use a unique ID associated with the user.
       // This would usually be a user ID or database ID.
-      id: shasum(user),
+      id: 0,
 
       // This is the user name that is displayed in the Login status page.
       // Only used for display purposes.
-      name: user
+      name: Zac
     })
 
     res.setHeader('Content-Type', 'text/plain; charset=utf8')
